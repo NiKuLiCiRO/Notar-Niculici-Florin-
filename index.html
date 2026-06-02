@@ -12,19 +12,27 @@
         nav a:hover { color: #3498db; }
         section { padding: 120px 20px 60px 20px; max-width: 1000px; margin: 0 auto; background: white; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
         h1, h2, h3 { color: #2c3e50; border-left: 5px solid #3498db; padding-left: 10px; }
-        .hero-img { width: 100%; max-height: 450px; object-fit: cover; border-radius: 8px; margin-top: 15px; }
+        
+        /* Profil Facebook Integrat Inteligent */
+        .profile-container { display: flex; align-items: center; gap: 30px; background: #eef2f7; padding: 25px; border-radius: 12px; margin-top: 20px; border: 1px solid #dcdfe4; }
+        .profile-avatar { width: 120px; height: 120px; background: #3498db; color: white; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: bold; border-radius: 50%; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3); border: 3px solid white; flex-shrink: 0; }
+        .profile-text { flex: 1; }
+        .fb-btn { display: inline-block; background-color: #1877f2; color: white; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px; transition: background 0.3s; font-size: 0.9rem; }
+        .fb-btn:hover { background-color: #166fe5; }
+
+        .hero-img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-top: 25px; }
         .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 20px; border-radius: 8px; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
         .map-container { margin-top: 20px; border: 2px solid #2c3e50; border-radius: 8px; overflow: hidden; }
         
-        /* Stiluri pentru tabele si grafice */
+        /* Tabele GANTT si KANBAN Noi */
         table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 30px; }
         th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
         th { background-color: #2c3e50; color: white; }
         tr:nth-child(even) { background-color: #f2f2f2; }
         
         .kanban-board { display: flex; gap: 15px; margin-top: 20px; overflow-x: auto; padding-bottom: 10px; }
-        .kanban-column { flex: 1; min-width: 200px; background: #f4f5f7; padding: 15px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .kanban-column { flex: 1; min-width: 220px; background: #f4f5f7; padding: 15px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
         .kanban-column h4 { margin-top: 0; padding-bottom: 10px; border-bottom: 2px solid #ddd; color: #333; }
         .kanban-card { background: white; padding: 12px; margin-bottom: 10px; border-radius: 4px; border-left: 4px solid #3498db; box-shadow: 0 1px 2px rgba(0,0,0,0.1); font-size: 0.9rem; }
         .card-tag { font-size: 0.75rem; background: #ebecf0; padding: 2px 6px; border-radius: 3px; font-weight: bold; color: #5e6c84; display: inline-block; margin-top: 5px; }
@@ -48,14 +56,24 @@
 <!-- Pagina 1: Acasă -->
 <section id="acasa">
     <h1>Notar Niculici Florin UDC- Targu Mures - Informatica</h1>
-    <p>Modernizarea actului notarial prin tehnologie. Oferim siguranță juridică, digitalizare și eficiență maximă pentru cetățenii din Târgu Mureș.</p>
-    <img src="https://unsplash.com" class="hero-img" alt="Birou Notarial Modern">
+    
+    <!-- Profilul oficial legat de contul tau de Facebook -->
+    <div class="profile-container">
+        <div class="profile-avatar">FN</div>
+        <div class="profile-text">
+            <h3>Notar Public Niculici Florin</h3>
+            <p>Manager de Proiect UDC. Coordonatorul integrării algoritmilor informatici în procesele notariale din Târgu Mureș.</p>
+            <a href="https://www.facebook.com/nflorin22" target="_blank" class="fb-btn">Vezi Profil Oficial Facebook</a>
+        </div>
+    </div>
+    
+    <img src="https://unsplash.com" class="hero-img" alt="Garantia Calitatii Notariale">
 </section>
 
 <!-- Pagina 2: Despre Noi -->
 <section id="despre">
     <h2>Despre Proiect & Tehnologie</h2>
-    <p>Cabinetul nostru îmbină expertiza juridică a notarului public Niculici Florin cu sistemele informatice de ultimă generație dezvoltate în cadrul UDC. Automatizăm procesele pentru reducerea timpului de așteptare.</p>
+    <p>Această platformă reprezintă o fuziune între științele juridice notariene și tehnologia informației. Implementarea este realizată sub supravegherea directă a notarului Niculici Florin, utilizând cele mai noi standarde web.</p>
     <div class="video-container">
         <iframe src="https://youtube.com" allowfullscreen></iframe>
     </div>
@@ -65,66 +83,67 @@
 <section id="servicii">
     <h2>Servicii Notariale și Informatice</h2>
     <ul>
-        <li>Autentificări acte, succesiuni și legalizări rapide.</li>
-        <li>Integrare cu Registrele Naționale Notariale informatizate.</li>
-        <li>Consultanță pentru securizarea documentelor digitale prin tehnologie blockchain.</li>
+        <li>Programări și procesări de acte automatizate pentru județul Mureș.</li>
+        <li>Baze de date securizate criptografic pentru contracte.</li>
+        <li>Arhivare digitală automatizată cu acces securizat pentru clienți.</li>
     </ul>
 </section>
 
 <!-- Pagina 4: Decontat -->
 <section id="decontat">
     <h2>Servicii Decontate & Facilități</h2>
-    <p>Conform normelor în vigoare, anumite categorii de acte notariale pot fi decontate sau scutite de taxe (de exemplu, succesiunile realizate în termenul legal sau actele pentru persoane cu dizabilități financiare severe).</p>
-    <p>Sistemul nostru informatic verifică automat eligibilitatea dumneavoastră pentru scutiri sau decontări în baza parteneriatelor instituționale.</p>
+    <p>Proiectul include un algoritm dedicat verificării automate a actelor notariale eligibile pentru decontare parțială sau totală de la bugetul de stat, conform legislației în vigoare.</p>
 </section>
 
 <!-- Pagina 5: Management Proiect (GANTT & KANBAN) -->
 <section id="management">
-    <h2>Planificare și Monitorizare Proiect</h2>
-    <p>Gestionarea etapelor de dezvoltare a platformei software pentru biroul notarial utilizând metodologii agile.</p>
+    <h2>Planificare și Monitorizare Proiect (GANTT & Jira)</h2>
+    <p>Mai jos sunt prezentate cele două grafice de structură cerute pentru managementul dezvoltării aplicației.</p>
     
-    <h3>1. Grafic GANTT (Planificare Cronologică)</h3>
+    <h3>1. Grafic GANTT Nou (Planificarea etapelor software în GANTTchart)</h3>
     <table>
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Activitate GANTT (GANTTchart)</th>
                 <th>Durată estimată</th>
-                <th>Dependențe directe</th>
+                <th>Responsabil</th>
+                <th>Dependențe</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td><b>A1</b></td><td>Analiză cerințe: Specificul notarial + module UDC</td><td>Zilele 1-3</td><td>-</td></tr>
-            <tr><td><b>A2</b></td><td>Design bază de date securizată pentru Târgu Mureș</td><td>Zilele 4-6</td><td>A1</td></tr>
-            <tr><td><b>A3</b></td><td>Implementare interfață HTML (Harta + Video)</td><td>Zilele 7-9</td><td>A2</td></tr>
-            <tr><td><b>A4</b></td><td>Integrare modul de calcul pentru secțiunea „Decontat”</td><td>Zilele 10-12</td><td>A3</td></tr>
-            <tr><td><b>A5</b></td><td>Lansare platformă publică și audit informatic</td><td>Zilele 13-14</td><td>A4</td></tr>
+            <tr><td><b>A1</b></td><td>Definire specificații juridice și cerințe UDC</td><td>Zilele 1-3</td><td>Notar Niculici F.</td><td>-</td></tr>
+            <tr><td><b>A2</b></td><td>Arhitectură bază de date securizată (Târgu Mureș)</td><td>Zilele 4-6</td><td>Echipa IT</td><td>A1</td></tr>
+            <tr><td><b>A3</b></td><td>Dezvoltare interfață web și legătură Facebook API</td><td>Zilele 7-9</td><td>Frontend Dev</td><td>A2</td></tr>
+            <tr><td><b>A4</b></td><td>Implementare modul „Decontat” și validare API</td><td>Zilele 10-12</td><td>Backend Dev</td><td>A3</td></tr>
+            <tr><td><b>A5</b></td><td>Lansare pe GitHub Pages și audit final</td><td>Zilele 13-14</td><td>QA Tester</td><td>A4</td></tr>
         </tbody>
     </table>
 
-    <h3>2. Grafic Kanban (Flux de Lucru stil JIRA)</h3>
+    <h3>2. Grafic Kanban Nou (Flux de lucru stil JIRA)</h3>
     <div class="kanban-board">
         <div class="kanban-column">
             <h4>TO DO (De făcut)</h4>
-            <div class="kanban-card">Adăugare API verificare criterii decontare acte notariale.<br><span class="card-tag">NF-1</span></div>
-            <div class="kanban-card">Schimbare font site pentru un aspect oficial.<br><span class="card-tag">NF-2</span></div>
+            <div class="kanban-card">Configurare API decontare automată.<br><span class="card-tag">NF-101</span></div>
+            <div class="kanban-card">Optimizare cod pentru telefoane mobile.<br><span class="card-tag">NF-102</span></div>
         </div>
         <div class="kanban-column" style="background: #fff3cd;">
             <h4>IN PROGRESS</h4>
-            <div class="kanban-card">Integrare iframe hartă satelit Târgu Mureș.<br><span class="card-tag">NF-3</span></div>
+            <div class="kanban-card">Verificare integrare link Facebook securizat.<br><span class="card-tag">NF-103</span></div>
         </div>
         <div class="kanban-column" style="background: #dbedff;">
             <h4>IN REVIEW</h4>
-            <div class="kanban-card">Testare validare link video YouTube (Digitalizare).<br><span class="card-tag">NF-4</span></div>
+            <div class="kanban-card">Verificare localizare hartă satelit Târgu Mureș.<br><span class="card-tag">NF-104</span></div>
         </div>
         <div class="kanban-column" style="background: #e2f0d9;">
             <h4>DONE (Finalizat)</h4>
-            <div class="kanban-card">Configurat titlu principal: Notar Niculici Florin.<br><span class="card-tag">NF-5</span></div>
+            <div class="kanban-card">Setat titlu proiect: Notar Niculici Florin UDC.<br><span class="card-tag">NF-105</span></div>
+            <div class="kanban-card">Integrare video YouTube educațional.<br><span class="card-tag">NF-106</span></div>
         </div>
     </div>
 </section>
 
-<!-- Pagina 6: Contact si Harta Interactiva Târgu Mureș -->
+<!-- Pagina 6: Contact si Harta -->
 <section id="contact">
     <h2>Contact & Locație Târgu Mureș</h2>
     <p><strong>Adresa:</strong> Centru, Târgu Mureș, Județul Mureș, România</p>
@@ -136,7 +155,7 @@
 </section>
 
 <footer>
-    <p>&copy; 2026 Notar Niculici Florin UDC. Proiect Informatică Aplicată.</p>
+    <p>&copy; 2026 Notar Niculici Florin UDC. Toate drepturile rezervate.</p>
 </footer>
 
 </body>
