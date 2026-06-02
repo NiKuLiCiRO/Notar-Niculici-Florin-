@@ -2,7 +2,7 @@
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>Management Proiect</title>
+    <title>Management Proiect - Notar Niculici Florin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,55 +12,60 @@
         <a href="despre.html">Despre Noi</a>
         <a href="servicii.html">Servicii Digitale</a>
         <a href="decontat.html">Decontat</a>
-        <a href="management.html">Management Proiect</a>
+        <a href="management.html" class="active">Management Proiect</a>
         <a href="contact.html">Contact & Hartă</a>
     </nav>
 </header>
 <main>
-    <h2>Planificare și Monitorizare Proiect (GANTT & Jira)</h2>
+    <h2>Metodologii de Management de Proiect: Agile și Cascadă</h2>
+    <p>Dezvoltarea aplicației informatice pentru Cabinetul Notarului Niculici Florin din Târgu Mureș a fost strict monitorizată prin instrumente consacrate de project management. Acest lucru garantează respectarea standardelor de securitate cibernetică.</p>
     
-    <h3>1. Grafic GANTT (GANTTchart)</h3>
+    <h2>1. Grafic GANTT Detaliat (Aplicația GANTTchart)</h2>
+    <p>Graficul GANTT de mai jos surprinde planificarea liniară și dependențele critice dintre fazele de analiză legală și cele de dezvoltare software.</p>
+    
     <table>
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Activitate GANTT</th>
-                <th>Durată</th>
-                <th>Responsabil</th>
-                <th>Dependențe</th>
+                <th>Activitate GANTT (GANTTchart)</th>
+                <th>Durată exactă</th>
+                <th>Responsabil Proiect</th>
+                <th>Dependențe Critice</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td><b>A1</b></td><td>Definire specificații juridice și cerințe UDC</td><td>Zilele 1-3</td><td>Notar Niculici F.</td><td>-</td></tr>
-            <tr><td><b>A2</b></td><td>Arhitectură bază de date securizată (Târgu Mureș)</td><td>Zilele 4-6</td><td>Echipa IT</td><td>A1</td></tr>
-            <tr><td><b>A3</b></td><td>Dezvoltare interfață web și legătură Facebook API</td><td>Zilele 7-9</td><td>Frontend Dev</td><td>A2</td></tr>
-            <tr><td><b>A4</b></td><td>Implementare modul „Decontat” și validare API</td><td>Zilele 10-12</td><td>Backend Dev</td><td>A3</td></tr>
-            <tr><td><b>A5</b></td><td>Lansare pe GitHub Pages și audit final</td><td>Zilele 13-14</td><td>QA Tester</td><td>A4</td></tr>
+            <tr><td><b>A1</b></td><td>Definire specificații juridice și cerințe arhitecturale UDC</td><td>Zilele 1-3</td><td>Notar Niculici F.</td><td>-</td></tr>
+            <tr><td><b>A2</b></td><td>Design structură bază de date criptată SQL (Târgu Mureș)</td><td>Zilele 4-6</td><td>Arhitect IT / DB Admin</td><td>A1 (Cerințe semnate)</td></tr>
+            <tr><td><b>A3</b></td><td>Dezvoltare interfață web statică și legătură Facebook API</td><td>Zilele 7-9</td><td>Frontend Developer</td><td>A2 (Baza de date gata)</td></tr>
+            <tr><td><b>A4</b></td><td>Implementare algoritm de calcul pentru modulul „Decontat”</td><td>Zilele 10-12</td><td>Backend Developer</td><td>A3 (UI integrat)</td></tr>
+            <tr><td><b>A5</b></td><td>Deploy public pe GitHub Pages și audit extern de securitate</td><td>Zilele 13-14</td><td>QA Engineer / Notar</td><td>A4 (Cod stabil)</td></tr>
         </tbody>
     </table>
 
-    <h3>2. Grafic Kanban (Stil JIRA)</h3>
+    <h2>2. Tablou Kanban Complet (Aplicația JIRA)</h2>
+    <p>Managementul de tip Scrum/Agile a permis echipei să vizualizeze blocajele în timp real. Tichetele unice Atlassian Jira sunt distribuite conform fluxului operațional curent:</p>
+    
     <div class="kanban-board">
-        <div class="kanban-column">
-            <h4>TO DO</h4>
-            <div class="kanban-card">Configurare API decontare.<br><span class="card-tag">NF-101</span></div>
-            <div class="kanban-card">Optimizare telefoane mobile.<br><span class="card-tag">NF-102</span></div>
+        <div class="kanban-column" style="background: #edf2f7;">
+            <h4>TO DO (De realizat)</h4>
+            <div class="kanban-card"><strong>NF-101:</strong> Configurare API extern pentru validări automate decontări.<br><span class="card-tag">Prioritate: Mare</span></div>
+            <div class="kanban-card"><strong>NF-102:</strong> Optimizare timp de încărcare scripturi pe server.<br><span class="card-tag">Prioritate: Mică</span></div>
         </div>
-        <div class="kanban-column" style="background: #fff3cd;">
-            <h4>IN PROGRESS</h4>
-            <div class="kanban-card">Verificare link Facebook.<br><span class="card-tag">NF-103</span></div>
+        <div class="kanban-column" style="background: #feebc8;">
+            <h4>IN PROGRESS (În lucru)</h4>
+            <div class="kanban-card"><strong>NF-103:</strong> Securizare conexiuni hyperlink pentru redirecționarea Facebook (/nflorin22).<br><span class="card-tag">Atribuit: Dev1</span></div>
         </div>
-        <div class="kanban-column" style="background: #dbedff;">
-            <h4>IN REVIEW</h4>
-            <div class="kanban-card">Verificare hartă Târgu Mureș.<br><span class="card-tag">NF-104</span></div>
+        <div class="kanban-column" style="background: #ebf8ff;">
+            <h4>IN REVIEW (În verificare)</h4>
+            <div class="kanban-card"><strong>NF-104:</strong> Verificare parametri de scalare iframe pentru harta Google Maps Târgu Mureș.<br><span class="card-tag">Atribuit: Tester</span></div>
         </div>
-        <div class="kanban-column" style="background: #e2f0d9;">
-            <h4>DONE</h4>
-            <div class="kanban-card">Setat titlu proiect.<br><span class="card-tag">NF-105</span></div>
-            <div class="kanban-card">Integrare video YouTube.<br><span class="card-tag">NF-106</span></div>
+        <div class="kanban-column" style="background: #c6f6d5;">
+            <h4>DONE (Finalizat cu succes)</h4>
+            <div class="kanban-card"><strong>NF-105:</strong> Configurat structură text și titlu oficial proiect.<br><span class="card-tag">Verificat</span></div>
+            <div class="kanban-card"><strong>NF-106:</strong> Integrare componentă video Youtube educațional.<br><span class="card-tag">Verificat</span></div>
         </div>
     </div>
 </main>
-<footer><p>&copy; 2026 Notar Niculici Florin UDC.</p></footer>
+<footer><p>&copy; 2026 Notar Niculici Florin UDC. Toate drepturile rezervate.</p></footer>
 </body>
 </html>
