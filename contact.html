@@ -1,8 +1,9 @@
+  
 <!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
-    <title>Contact & Locatie</title>
+    <title>Contact & Locatie - Notar Niculici Florin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,51 +14,58 @@
         <a href="servicii.html">Servicii Digitale</a>
         <a href="decontat.html">Decontat</a>
         <a href="management.html">Management Proiect</a>
-        <a href="contact.html">Contact & Hartă</a>
+        <a href="contact.html" class="active">Contact & Hartă</a>
     </nav>
 </header>
 <main>
-    <h2>Contact & Locație Târgu Mureș</h2>
-    <p><strong>Adresa:</strong> Centru, Târgu Mureș, Județul Mureș, România</p>
-    <p><strong>Email:</strong> niculici.florin@udc-informatica.ro</p>
+    <h2>Contactați Biroul Notarial din Târgu Mureș</h2>
+    <p>Vă stăm la dispoziție pentru orice tip de act legal, succesiuni sau consultanță informatică aplicată în drept. Ne puteți vizita la sediul nostru central sau puteți iniția procedura utilizând formularul digital securizat de mai jos.</p>
     
-    <!-- Formular de Contact Adaugat -->
-    <div class="form-container">
-        <h3>Programare Online / Solicitare Informații</h3>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="nume">Nume Complet:</label>
-                <input type="text" id="nume" name="nume" placeholder="Introduceți numele dvs." required>
-            </div>
-            
-            <div class="form-group">
-                <label for="telefon">Număr de Telefon:</label>
-                <input type="tel" id="telefon" name="telefon" placeholder="07xx xxx xxx" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="serviciu">Tip Serviciu Solicitat:</label>
-                <select id="serviciu" name="serviciu">
-                    <option value="autentificare">Autentificare Acte / Contracte</option>
-                    <option value="succesiune">Succesiuni și Moșteniri</option>
-                    <option value="decontat">Consultare Eligibilitate Act Decontat</option>
-                    <option value="altele">Alte Servicii Digitale UDC</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="mesaj">Mesaj sau Detalii Suplimentare:</label>
-                <textarea id="mesaj" name="mesaj" rows="5" placeholder="Scrieți detalii despre solicitarea dvs. (ex: disponibilitate orară)..." required></textarea>
-            </div>
-            
-            <button type="submit" class="submit-btn">Trimite Solicitarea</button>
-        </form>
+    <div class="grid-2">
+        <div>
+            <h3>Informații de Contact</h3>
+            <p><strong>Locație:</strong> Centru, Târgu Mureș, Județul Mureș, România</p>
+            <p><strong>E-mail Oficial:</strong> niculici.florin@udc-informatica.ro</p>
+            <p><strong>Telefon Secretariat:</strong> +40 265 000 000</p>
+            <p><strong>Program de lucru:</strong> Luni - Vineri: 09:00 - 17:00</p>
+        </div>
+        
+        <div class="form-container">
+            <h3>Programare Online Rapidă</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nume">Nume și Prenume client:</label>
+                    <input type="text" id="nume" name="nume" placeholder="Ex: Ion Popescu" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefon">Telefon Contact:</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="07xxxxxxxx" required>
+                </div>
+                <div class="form-group">
+                    <label for="serviciu">Act Notarial Solicitat:</label>
+                    <select id="serviciu" name="serviciu">
+                        <option value="vanzare">Contract Vânzare-Cumpărare</option>
+                        <option value="succesiune">Procedură Succesorală (Moștenire)</option>
+                        <option value="decontat">Verificare Act Decontat / Scutit</option>
+                        <option value="procura">Procură Specială Digitală</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mesaj">Scurtă descriere a speței:</label>
+                    <textarea id="mesaj" name="mesaj" rows="4" placeholder="Menționați detalii relevante..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Trimite Datele Securizat</button>
+            </form>
+        </div>
     </div>
 
+    <h2>Localizare Interactivă pe Hartă</h2>
+    <p>Biroul este situat într-o zonă accesibilă din Târgu Mureș, cu locuri de parcare rezervate clienților noștri.</p>
+    
     <div class="map-container">
-        <iframe src="https://google.com" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://google.com" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </main>
-<footer><p>&copy; 2026 Notar Niculici Florin UDC.</p></footer>
+<footer><p>&copy; 2026 Notar Niculici Florin UDC. Toate drepturile rezervate.</p></footer>
 </body>
 </html>
