@@ -20,6 +20,40 @@
     <h2>Contact & Locație Târgu Mureș</h2>
     <p><strong>Adresa:</strong> Centru, Târgu Mureș, Județul Mureș, România</p>
     <p><strong>Email:</strong> niculici.florin@udc-informatica.ro</p>
+    
+    <!-- Formular de Contact Adaugat -->
+    <div class="form-container">
+        <h3>Programare Online / Solicitare Informații</h3>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nume">Nume Complet:</label>
+                <input type="text" id="nume" name="nume" placeholder="Introduceți numele dvs." required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefon">Număr de Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="07xx xxx xxx" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="serviciu">Tip Serviciu Solicitat:</label>
+                <select id="serviciu" name="serviciu">
+                    <option value="autentificare">Autentificare Acte / Contracte</option>
+                    <option value="succesiune">Succesiuni și Moșteniri</option>
+                    <option value="decontat">Consultare Eligibilitate Act Decontat</option>
+                    <option value="altele">Alte Servicii Digitale UDC</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="mesaj">Mesaj sau Detalii Suplimentare:</label>
+                <textarea id="mesaj" name="mesaj" rows="5" placeholder="Scrieți detalii despre solicitarea dvs. (ex: disponibilitate orară)..." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Trimite Solicitarea</button>
+        </form>
+    </div>
+
     <div class="map-container">
         <iframe src="https://google.com" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
